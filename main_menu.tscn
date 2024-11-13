@@ -1,0 +1,115 @@
+[gd_scene load_steps=23 format=3 uid="uid://driakk4qne2op"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_f5p4w"]
+[ext_resource type="Texture2D" uid="uid://bpvky5fd6pfvy" path="res://menu_res/bg_gif/bg2.png" id="1_u4y71"]
+[ext_resource type="Texture2D" uid="uid://donxok50ixln6" path="res://menu_res/bg_gif/bg3.png" id="2_p14xp"]
+[ext_resource type="Texture2D" uid="uid://ctnsmv5gpfvr0" path="res://menu_res/bg_gif/bg4.png" id="3_8av5h"]
+[ext_resource type="Texture2D" uid="uid://cj0c07wm0npre" path="res://menu_res/bg_gif/bg5.png" id="4_8k4w0"]
+[ext_resource type="Texture2D" uid="uid://dtxsuax6w1243" path="res://menu_res/bg_gif/bg6.png" id="5_toyfk"]
+[ext_resource type="Texture2D" uid="uid://wcdf4l4xneaq" path="res://menu_res/bg_gif/bg7.png" id="6_h8nrj"]
+[ext_resource type="Texture2D" uid="uid://cxf41mttts1bo" path="res://menu_res/bg_gif/bg8.png" id="7_68blv"]
+[ext_resource type="Texture2D" uid="uid://d1sjjw2k3gcku" path="res://menu_res/bg_gif/bg9.png" id="8_vsw82"]
+[ext_resource type="Texture2D" uid="uid://wuxxa4lcx5fg" path="res://menu_res/bg_gif/bg10.png" id="9_krhg3"]
+[ext_resource type="Texture2D" uid="uid://cwjv5pkckredj" path="res://menu_res/bg_gif/bg11.png" id="10_m8f20"]
+[ext_resource type="Texture2D" uid="uid://ymsjfjq02a2v" path="res://menu_res/bg_gif/bg12.png" id="11_ds24l"]
+[ext_resource type="Texture2D" uid="uid://bypyx77i8t7sf" path="res://menu_res/bg_gif/bg13.png" id="12_vvtcn"]
+[ext_resource type="Texture2D" uid="uid://cugnxltxkbj22" path="res://menu_res/bg_gif/bg14.png" id="13_tp23c"]
+[ext_resource type="Texture2D" uid="uid://jfe5801iw6ot" path="res://menu_res/bg_gif/bg15.png" id="14_jlt6p"]
+[ext_resource type="Texture2D" uid="uid://c7nbhrmxjgf5g" path="res://menu_res/bg_gif/bg16.png" id="15_8heu7"]
+[ext_resource type="Texture2D" uid="uid://cxpms372xefk2" path="res://menu_res/bg_gif/bg17.png" id="16_h1i8w"]
+[ext_resource type="Texture2D" uid="uid://dxml1x7myaynt" path="res://menu_res/bg_gif/bg18.png" id="17_csk6n"]
+[ext_resource type="Texture2D" uid="uid://jqchoa7nmyaa" path="res://menu_res/bg_gif/bg19.png" id="18_uco6c"]
+[ext_resource type="Texture2D" uid="uid://ereglmwsclxd" path="res://menu_res/bg_gif/bg20.png" id="19_b15lq"]
+[ext_resource type="Texture2D" uid="uid://b6pyrtgvyrgfi" path="res://menu_res/bg_gif/bg21.png" id="20_ga4hr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7xqqd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_u4y71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_p14xp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_8av5h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8k4w0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_toyfk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_h8nrj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_68blv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_vsw82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_krhg3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_m8f20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ds24l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_vvtcn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_tp23c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_jlt6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_8heu7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_h1i8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_csk6n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_uco6c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_b15lq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ga4hr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Main_Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f5p4w")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_7xqqd")
+frame = 16
+frame_progress = 0.302689
